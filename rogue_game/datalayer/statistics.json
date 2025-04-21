@@ -1,0 +1,14 @@
+[
+    {
+        "player_name": "mike",
+        "treasure_collected": 486,
+        "max_level": 3,
+        "enemies_defeated": 16,
+        "food_eaten": 17,
+        "elixirs_used": 5,
+        "scrolls_used": 7,
+        "hits_dealt": 59,
+        "hits_taken": 45,
+        "tiles_walked": 590
+    }
+]

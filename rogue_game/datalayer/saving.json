@@ -1,0 +1,5644 @@
+{
+    "player": {
+        "symb": "@",
+        "x": 26,
+        "y": 9,
+        "max_hp": 192,
+        "cur_hp": 77,
+        "agility": 30,
+        "strength": 25,
+        "bonus_agility": 0,
+        "bonus_strength": 5,
+        "bonus_max_hp": 0,
+        "backpack": [],
+        "equipped_weapon": {
+            "x": 54,
+            "y": 1,
+            "item_type": "sword",
+            "item_subtype": "common",
+            "symbol": "\u2020",
+            "heal_hp": 0,
+            "max_hp": 0,
+            "agility": 0,
+            "strength": 5,
+            "target_stat": null,
+            "gold": 0
+        },
+        "sleep_turns": false,
+        "player_name": "mike",
+        "active_buffs": [],
+        "stats": {
+            "gold": 333,
+            "eaten_food": 11,
+            "used_elixir": 5,
+            "used_scrolls": 6,
+            "enemies_defeated": 13,
+            "hits_dealt": 44,
+            "hits_taken": 31,
+            "tiles_walked": 476
+        }
+    },
+    "enemies": [
+        {
+            "x": 5,
+            "y": 7,
+            "lvl_number": 2,
+            "cur_hp": 99,
+            "max_hp": 99,
+            "agility": 11,
+            "strength": 7,
+            "hostility": 2,
+            "reward": 18,
+            "symbol": "$",
+            "color": 1
+        },
+        {
+            "x": 4,
+            "y": 14,
+            "lvl_number": 2,
+            "cur_hp": 55,
+            "max_hp": 55,
+            "agility": 11,
+            "strength": 7,
+            "hostility": 2,
+            "reward": 16,
+            "symbol": "g",
+            "color": 1,
+            "invisible": false
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "lvl_number": 2,
+            "cur_hp": 110,
+            "max_hp": 110,
+            "agility": 5,
+            "strength": 22,
+            "hostility": 3,
+            "reward": 26,
+            "symbol": "O",
+            "color": 7,
+            "resting": false
+        }
+    ],
+    "items": [
+        {
+            "x": 16,
+            "y": 1,
+            "item_type": "food",
+            "item_subtype": "common",
+            "symbol": "\u2665",
+            "heal_hp": 15,
+            "max_hp": 0,
+            "agility": 0,
+            "strength": 0,
+            "target_stat": null,
+            "gold": 0
+        },
+        {
+            "x": 13,
+            "y": 3,
+            "item_type": "food",
+            "item_subtype": "rare",
+            "symbol": "\u2665",
+            "heal_hp": 30,
+            "max_hp": 0,
+            "agility": 0,
+            "strength": 0,
+            "target_stat": null,
+            "gold": 0
+        },
+        {
+            "x": 17,
+            "y": 5,
+            "item_type": "food",
+            "item_subtype": "common",
+            "symbol": "\u2665",
+            "heal_hp": 15,
+            "max_hp": 0,
+            "agility": 0,
+            "strength": 0,
+            "target_stat": null,
+            "gold": 0
+        },
+        {
+            "x": 5,
+            "y": 15,
+            "item_type": "sword",
+            "item_subtype": "common",
+            "symbol": "\u2020",
+            "heal_hp": 0,
+            "max_hp": 0,
+            "agility": 0,
+            "strength": 5,
+            "target_stat": null,
+            "gold": 0
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "item_type": "elixir",
+            "item_subtype": "rare",
+            "symbol": "\u271a",
+            "heal_hp": 0,
+            "max_hp": 0,
+            "agility": 24,
+            "strength": 0,
+            "target_stat": "agility",
+            "gold": 0
+        },
+        {
+            "x": 9,
+            "y": 10,
+            "item_type": "scroll",
+            "item_subtype": "common",
+            "symbol": "~",
+            "heal_hp": 0,
+            "max_hp": 11,
+            "agility": 0,
+            "strength": 0,
+            "target_stat": "max_hp",
+            "gold": 0
+        }
+    ],
+    "level_num": 2,
+    "level": {
+        "tiles": [
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": false,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": false
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ],
+            [
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                },
+                {
+                    "blocked": true,
+                    "block_sight": true
+                }
+            ]
+        ],
+        "exit_door_x": 26,
+        "exit_door_y": 9,
+        "rooms": [
+            {
+                "x1": 2,
+                "y1": 1,
+                "x2": 18,
+                "y2": 5,
+                "room_number": 0
+            },
+            {
+                "x1": 28,
+                "y1": 1,
+                "x2": 34,
+                "y2": 5,
+                "room_number": 1
+            },
+            {
+                "x1": 44,
+                "y1": 1,
+                "x2": 52,
+                "y2": 5,
+                "room_number": 2
+            },
+            {
+                "x1": 1,
+                "y1": 7,
+                "x2": 18,
+                "y2": 11,
+                "room_number": 3
+            },
+            {
+                "x1": 23,
+                "y1": 7,
+                "x2": 27,
+                "y2": 11,
+                "room_number": 4
+            },
+            {
+                "x1": 44,
+                "y1": 7,
+                "x2": 51,
+                "y2": 11,
+                "room_number": 5
+            },
+            {
+                "x1": 2,
+                "y1": 14,
+                "x2": 6,
+                "y2": 18,
+                "room_number": 6
+            },
+            {
+                "x1": 21,
+                "y1": 13,
+                "x2": 38,
+                "y2": 17,
+                "room_number": 7
+            },
+            {
+                "x1": 40,
+                "y1": 14,
+                "x2": 51,
+                "y2": 18,
+                "room_number": 8
+            }
+        ],
+        "corridors": [
+            {
+                "rooms": [
+                    {
+                        "x1": 28,
+                        "y1": 1,
+                        "x2": 34,
+                        "y2": 5,
+                        "room_number": 1
+                    },
+                    {
+                        "x1": 44,
+                        "y1": 1,
+                        "x2": 52,
+                        "y2": 5,
+                        "room_number": 2
+                    }
+                ],
+                "coordinates": [
+                    [
+                        35,
+                        4
+                    ],
+                    [
+                        36,
+                        4
+                    ],
+                    [
+                        37,
+                        4
+                    ],
+                    [
+                        38,
+                        4
+                    ],
+                    [
+                        39,
+                        4
+                    ],
+                    [
+                        40,
+                        4
+                    ],
+                    [
+                        41,
+                        4
+                    ],
+                    [
+                        42,
+                        4
+                    ],
+                    [
+                        43,
+                        4
+                    ]
+                ],
+                "color_idx": 8
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 44,
+                        "y1": 1,
+                        "x2": 52,
+                        "y2": 5,
+                        "room_number": 2
+                    },
+                    {
+                        "x1": 44,
+                        "y1": 7,
+                        "x2": 51,
+                        "y2": 11,
+                        "room_number": 5
+                    }
+                ],
+                "coordinates": [
+                    [
+                        49,
+                        6
+                    ]
+                ],
+                "color_idx": 7
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 23,
+                        "y1": 7,
+                        "x2": 27,
+                        "y2": 11,
+                        "room_number": 4
+                    },
+                    {
+                        "x1": 44,
+                        "y1": 7,
+                        "x2": 51,
+                        "y2": 11,
+                        "room_number": 5
+                    }
+                ],
+                "coordinates": [
+                    [
+                        28,
+                        8
+                    ],
+                    [
+                        29,
+                        8
+                    ],
+                    [
+                        30,
+                        8
+                    ],
+                    [
+                        31,
+                        8
+                    ],
+                    [
+                        32,
+                        8
+                    ],
+                    [
+                        33,
+                        8
+                    ],
+                    [
+                        34,
+                        8
+                    ],
+                    [
+                        35,
+                        8
+                    ],
+                    [
+                        36,
+                        8
+                    ],
+                    [
+                        37,
+                        8
+                    ],
+                    [
+                        38,
+                        8
+                    ],
+                    [
+                        39,
+                        8
+                    ],
+                    [
+                        40,
+                        8
+                    ],
+                    [
+                        41,
+                        8
+                    ],
+                    [
+                        42,
+                        8
+                    ],
+                    [
+                        43,
+                        8
+                    ]
+                ],
+                "color_idx": 8
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 23,
+                        "y1": 7,
+                        "x2": 27,
+                        "y2": 11,
+                        "room_number": 4
+                    },
+                    {
+                        "x1": 21,
+                        "y1": 13,
+                        "x2": 38,
+                        "y2": 17,
+                        "room_number": 7
+                    }
+                ],
+                "coordinates": [
+                    [
+                        25,
+                        12
+                    ]
+                ],
+                "color_idx": 8
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 21,
+                        "y1": 13,
+                        "x2": 38,
+                        "y2": 17,
+                        "room_number": 7
+                    },
+                    {
+                        "x1": 40,
+                        "y1": 14,
+                        "x2": 51,
+                        "y2": 18,
+                        "room_number": 8
+                    }
+                ],
+                "coordinates": [
+                    [
+                        39,
+                        16
+                    ]
+                ],
+                "color_idx": 2
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 2,
+                        "y1": 1,
+                        "x2": 18,
+                        "y2": 5,
+                        "room_number": 0
+                    },
+                    {
+                        "x1": 28,
+                        "y1": 1,
+                        "x2": 34,
+                        "y2": 5,
+                        "room_number": 1
+                    }
+                ],
+                "coordinates": [
+                    [
+                        19,
+                        3
+                    ],
+                    [
+                        20,
+                        3
+                    ],
+                    [
+                        21,
+                        3
+                    ],
+                    [
+                        22,
+                        3
+                    ],
+                    [
+                        23,
+                        3
+                    ],
+                    [
+                        24,
+                        3
+                    ],
+                    [
+                        25,
+                        3
+                    ],
+                    [
+                        26,
+                        3
+                    ],
+                    [
+                        27,
+                        3
+                    ]
+                ],
+                "color_idx": 8
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 2,
+                        "y1": 1,
+                        "x2": 18,
+                        "y2": 5,
+                        "room_number": 0
+                    },
+                    {
+                        "x1": 1,
+                        "y1": 7,
+                        "x2": 18,
+                        "y2": 11,
+                        "room_number": 3
+                    }
+                ],
+                "coordinates": [
+                    [
+                        11,
+                        6
+                    ]
+                ],
+                "color_idx": 8
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 1,
+                        "y1": 7,
+                        "x2": 18,
+                        "y2": 11,
+                        "room_number": 3
+                    },
+                    {
+                        "x1": 2,
+                        "y1": 14,
+                        "x2": 6,
+                        "y2": 18,
+                        "room_number": 6
+                    }
+                ],
+                "coordinates": [
+                    [
+                        5,
+                        12
+                    ],
+                    [
+                        5,
+                        13
+                    ]
+                ],
+                "color_idx": 3
+            },
+            {
+                "rooms": [
+                    {
+                        "x1": 44,
+                        "y1": 7,
+                        "x2": 51,
+                        "y2": 11,
+                        "room_number": 5
+                    },
+                    {
+                        "x1": 40,
+                        "y1": 14,
+                        "x2": 51,
+                        "y2": 18,
+                        "room_number": 8
+                    }
+                ],
+                "coordinates": [
+                    [
+                        45,
+                        12
+                    ],
+                    [
+                        45,
+                        13
+                    ]
+                ],
+                "color_idx": 8
+            }
+        ],
+        "maze_path": [
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                5
+            ],
+            [
+                5,
+                4
+            ],
+            [
+                4,
+                7
+            ],
+            [
+                7,
+                8
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                0,
+                3
+            ],
+            [
+                3,
+                6
+            ],
+            [
+                5,
+                8
+            ]
+        ],
+        "doors": [
+            {
+                "color_idx": 3,
+                "corridor": {
+                    "rooms": [
+                        {
+                            "x1": 1,
+                            "y1": 7,
+                            "x2": 18,
+                            "y2": 11,
+                            "room_number": 3
+                        },
+                        {
+                            "x1": 2,
+                            "y1": 14,
+                            "x2": 6,
+                            "y2": 18,
+                            "room_number": 6
+                        }
+                    ],
+                    "coordinates": [
+                        [
+                            5,
+                            12
+                        ],
+                        [
+                            5,
+                            13
+                        ]
+                    ],
+                    "color_idx": 3
+                }
+            },
+            {
+                "color_idx": 2,
+                "corridor": {
+                    "rooms": [
+                        {
+                            "x1": 21,
+                            "y1": 13,
+                            "x2": 38,
+                            "y2": 17,
+                            "room_number": 7
+                        },
+                        {
+                            "x1": 40,
+                            "y1": 14,
+                            "x2": 51,
+                            "y2": 18,
+                            "room_number": 8
+                        }
+                    ],
+                    "coordinates": [
+                        [
+                            39,
+                            16
+                        ]
+                    ],
+                    "color_idx": 2
+                }
+            },
+            {
+                "color_idx": 7,
+                "corridor": {
+                    "rooms": [
+                        {
+                            "x1": 44,
+                            "y1": 1,
+                            "x2": 52,
+                            "y2": 5,
+                            "room_number": 2
+                        },
+                        {
+                            "x1": 44,
+                            "y1": 7,
+                            "x2": 51,
+                            "y2": 11,
+                            "room_number": 5
+                        }
+                    ],
+                    "coordinates": [
+                        [
+                            49,
+                            6
+                        ]
+                    ],
+                    "color_idx": 7
+                }
+            }
+        ],
+        "keys": []
+    }
+}
