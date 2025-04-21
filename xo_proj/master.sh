@@ -40,6 +40,7 @@ export PATH=\$PATH:/root/yandex-cloud/bin
   
   # Запускаем контейнеры с новым образом в фоновом режиме
   docker-compose -f /root/xo_proj/docker-compose.server.yml up -d
+  docker image prune -f
 EOF
 
 # Проверка успешности перезапуска
