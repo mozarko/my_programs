@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Список игр</title>
+<link rel="stylesheet" href="/static/styles_index.css">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Список игр</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>ID Игры</th>
+            <th>Создатель</th>
+            <th>Победитель</th>
+            <th>Состояние</th>
+            <th>Действие</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for game in games %}
+        <tr>
+            <td data-label="ID Игры">{{ game.game_id }}</td>
+            <td data-label="Создатель">{{ game.user_login }}</td>
+            <td data-label="Победитель">{{ game.get_winner() or '—' }}</td>
+            <td data-label="Состояние">{{ 'Завершена' if game.is_game_over else 'В процессе' }}</td>
+            <td data-label="Действие">
+                {% if not game.is_game_over %}
+                <a href="{{ url_for('routes.continue_game', game_id=game.game_id) }}">
+                    <button>Продолжить</button>
+                </a>
+                {% else %}
+                —
+                {% endif %}
+            </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="5">Нет доступных игр</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

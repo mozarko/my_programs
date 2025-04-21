@@ -1,0 +1,268 @@
+/* === Основные стили === */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* === Заголовок === */
+h1 {
+    background: linear-gradient(90deg, #ff5733, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* === Блок выбора символа === */
+#symbolSelection {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+#symbolSelection:hover {
+    transform: scale(1.05);
+}
+
+#symbolSelection p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+#symbolSelection label {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#symbolSelection label:hover {
+    color: #ff5733;
+}
+
+/* === Радиокнопки для выбора символа === */
+#symbolSelection input[type="radio"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#symbolSelection input[type="radio"]:checked {
+    background-color: #ff5733; /* Цвет фона для выбранного крестика */
+    border-color: #ff5733;
+}
+
+#symbolSelection input[type="radio"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* === Кнопка выбора символа === */
+#symbolSelection button {
+    background: linear-gradient(135deg, #ff5733, #ffcc29);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#symbolSelection button:hover {
+    background: linear-gradient(135deg, #ffcc29, #ff5733);
+}
+
+/* === Игровое поле === */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 3px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+/* === Кнопка "Начать новую игру" === */
+#newGameButton {
+    background: linear-gradient(135deg, #008CBA, #00688B);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+/* === Стили для ссылок === */
+a {
+    color: #00688B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+p  {
+    color: #00688B;
+    text-decoration: saddlebrown;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #ff5733;
+    text-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+}
+
+a button {
+    all: unset;
+    display: inline-block;
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+a button:hover {
+    background: linear-gradient(135deg, #96c93d, #00b09b);
+}
+
+
+#newGameButton:hover {
+    background: linear-gradient(135deg, #00688B, #008CBA);
+}
+
+/* === Отображение выбранного символа === */
+#playerSymbolDisplay {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* === Адаптивность === */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    td {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    #symbolSelection {
+        padding: 15px;
+    }
+
+    #symbolSelection button, #newGameButton {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* == Мультиплеер == */
+.game-id-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.game-id {
+    font-weight: bold;
+    font-family: monospace;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.copy-button, .cancel-button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    margin-top: 10px;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button:hover {
+    background-color: #d32f2f;
+}

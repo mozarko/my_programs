@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Крестики-нолики от johnalen</title>
+    <link rel="stylesheet" href="/static/styles.css">
+{% endblock %}
+{% block content %}
+    <h1>Крестики-нолики</h1>
+    <div id="symbolSelection" style="display: none;">
+        <button onclick="continueGame('{{ game_id }}')">Продолжить игру</button>
+    </div>
+    <table id="gameBoard"></table>
+    <br>
+    <p id="playerSymbolDisplay"></p>
+    <a href="{{ url_for('routes.game_xo') }}">
+        <button id="newGameButton" style="display: none;">Начать новую игру</button>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/script.js"></script>
+    <script>
+        // Автоматический запуск continueGame при загрузке страницы
+        document.addEventListener("DOMContentLoaded", function () {
+            continueGame("{{ game_id }}");
+        });
+    </script>
+{% endblock %}

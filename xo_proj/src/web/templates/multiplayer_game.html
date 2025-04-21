@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Крестики-нолики от johnalen</title>
+    <link rel="stylesheet" href="/static/styles.css">
+{% endblock %}
+{% block content %}
+    <h1>Крестики-нолики</h1>
+    <h2>Мультиплеер</h2>
+    <div id="symbolSelection" style="display: none;">
+        <p>Выберите за что играть:</p>
+        <label>
+            <input type="radio" name="player_symbol" value="X" checked> Крестики (X)
+        </label>
+        <label>
+            <input type="radio" name="player_symbol" value="O"> Нолики (O)
+        </label>
+        <button onclick="startMultiGame()">Начать игру</button>
+    </div>
+
+    <div id="waitingScreen" style="display: none;">
+        <h3>Ожидание второго игрока...</h3>
+        <div class="game-id-container">
+            <p>ID вашей игры: <span id="gameIdDisplay" class="game-id"></span></p>
+            <button onclick="copyGameId()" class="copy-button">Копировать ID</button>
+        </div>
+        <p>Поделитесь этим ID с другом для подключения</p>
+        <div id="opponentInfo"></div>
+    </div>
+
+    <table id="gameBoard"></table>
+    <br>
+
+    <p id="playerDisplay"></p>
+    <p id="statement"></p>
+    <p id="game_id"></p>
+
+    <a href="{{ url_for('routes.multiplayer_game') }}">
+        <button id="newGameButton" style="display: none;">Начать новую игру</button>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/script_multi.js"></script>
+{% endblock %}

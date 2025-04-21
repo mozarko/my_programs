@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/static/user_auth_styles.css">
+{% endblock %}
+{% block content %}
+<div class="form-container">
+    <h1>Регистрация</h1>
+    <form action="/register" method="POST" class="{{ 'disabled-form' if registration_success }}">
+        <label>Логин:</label><br>
+        <input type="text" name="login" placeholder="Логин" required {{ 'disabled' if registration_success }}><br><br>
+        <label>Пароль:</label><br>
+        <input type="password" name="password" placeholder="Пароль" required ><br><br>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+    <br><br>
+    <a class="back-link" href="/">Вернуться на главную</a>
+</div>
+
+
+<!-- Затемняющий фон -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Всплывающее сообщение -->
+<div class="popup" id="popup">
+    <p id="popup-message"></p>
+    <button onclick="closePopup()">OK</button>
+</div>
+<script src="/static/script_reg.js"></script>
+<script>
+    // Проверка переменной из Jinja
+    {% if registration_success %}
+        showPopup('Регистрация успешна!', '/');
+    {% elif registration_error %}
+        showPopup('Ошибка регистрации: пользователь уже существует!', null);
+    {% endif %}
+</script>
+{% endblock %}

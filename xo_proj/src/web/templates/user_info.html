@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Информация о пользователе</title>
+    <link rel="stylesheet" href="/static/styles_index.css">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Информация о пользователе</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>UUID</th>
+            <th>Логин</th>
+            <th>ID</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="UUID">{{ session['user_uid']}}</td>
+            <td data-label="Логин">{{ session['user_login'] }}</td>
+            <td data-label="ID">{{ session['user_id'] }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

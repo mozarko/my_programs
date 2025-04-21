@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Вход</title>
+    <link rel="stylesheet" href="/static/user_auth_styles.css">
+{% endblock %}
+{% block content %}
+    <div class="form-container">
+        <h1>Вход</h1>
+        <form onsubmit="handleLogin(event)">
+            <label>Логин:</label><br>
+            <input type="text" name="login" placeholder="Логин" required><br><br>
+            <label>Пароль:</label><br>
+            <input type="password" name="password" placeholder="Пароль" required><br><br>
+            <button type="submit">Войти</button>
+        </form>
+        <br><br>
+        <a class="back-link" href="/">Вернуться на главную</a>
+    </div>
+     <!-- Затемняющий фон -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Всплывающее сообщение -->
+    <div class="popup" id="popup">
+        <p id="popup-message"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+<script src="/static/script_auth.js"></script>
+{% endblock %}

@@ -1,0 +1,42 @@
+services:
+  flask:
+    image: cr.yandex/crpj07mj889kvh8ss9gs/xo:latest
+    container_name: xo
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASS=postgres
+      - DB_NAME=johnalen
+      - FLASK_ENV=production
+      - SECRET_KEY=${SECRET_KEY}
+    working_dir: /app
+    command: gunicorn -w 1 -b 0.0.0.0:5000 app:app
+
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: johnalen
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: always
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"  # Прокси-сервер для приема запросов на стандартный HTTP порт
+    depends_on:
+      - flask  # Запуск Nginx после Flask
+
+volumes:
+  pgdata:

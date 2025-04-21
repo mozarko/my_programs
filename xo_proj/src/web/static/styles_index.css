@@ -1,0 +1,174 @@
+/* === Основные стили === */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* === Заголовок === */
+h1 {
+    background: linear-gradient(90deg, #ff5733, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+/* === Контейнер === */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* === Таблица === */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+thead {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+/* === Заголовки и ячейки === */
+th, td {
+    padding: 12px 8px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+/* Специальные стили для ячейки с ID игры */
+td:first-child {
+    word-break: break-word;  /* Разрешаем перенос слов */
+    white-space: normal;    /* Разрешаем перенос строк */
+    max-width: 150px;       /* Ограничиваем максимальную ширину */
+    text-align: left;       /* Выравниваем по левому краю */
+    padding-left: 12px;     /* Добавляем отступ слева */
+}
+
+th {
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* === Кнопки === */
+a button {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+a button:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    transform: translateY(-1px);
+}
+
+/* === Стили для кнопки "Присоединиться" и "Продолжить" === */
+button {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    transform: translateY(-1px);
+}
+
+/* === Адаптация для мобильных === */
+@media (max-width: 600px) {
+    /* Преобразуем таблицу в карточки на маленьких экранах */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: right;
+        max-width: none;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #3498db;
+    }
+
+        /* Отключаем специальные стили для ID на мобильных */
+    td:first-child {
+        word-break: normal;
+        white-space: normal;
+        max-width: none;
+        text-align: right;
+        padding-left: 50%;
+    }
+
+    /* Добавляем метки для ячеек */
+    td:nth-of-type(1):before { content: "ID Игры"; }
+    td:nth-of-type(2):before { content: "Создатель"; }
+    td:nth-of-type(3):before { content: "Игрок2"; }
+    td:nth-of-type(4):before { content: "Победитель"; }
+    td:nth-of-type(5):before { content: "Состояние"; }
+    td:nth-of-type(6):before { content: "Действие"; }
+}

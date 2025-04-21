@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Список игр</title>
+<link rel="stylesheet" href="/static/styles_index.css">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Список завершённых и активных игр</h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID Игры</th>
+            <th>Создатель</th>
+            <th>Игрок2</th>
+            <th>Победитель</th>
+            <th>Состояние</th>
+            <th>Действие</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for game in games %}
+        <tr>
+            <td data-label="ID Игры">{{ game.game_id }}</td>
+            <td data-label="Создатель">{{ game.user_login }}</td>
+            <td data-label="Игрок2">{{ game.user2_login or '—' }}</td>
+            <td data-label="Победитель">{{ game.get_winner() or '—' }}</td>
+            <td data-label="Состояние">{{ 'Завершена' if game.is_game_over else 'В процессе' }}</td>
+            <td data-label="Действие">
+                {% if game.is_game_over %}
+                Игра завершена
+                {% else %}
+                {% if game.user_id == session["user_id"] %}
+                Ваша игра
+                {% else %}
+                {% if game.user2_id and game.user2_id != session["user_id"] %}
+                Игра занята
+                {% else %}
+                <a href="{{ url_for('routes.join_game', game_id=game.game_id) }}">
+                    <button>Присоединиться</button>
+                </a>
+                {% endif %}
+                {% endif %}
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

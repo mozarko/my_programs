@@ -1,0 +1,44 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" href="/static/header.css">
+</head>
+<body data-user-login="{{ session['user_login'] }}">
+<header>
+    <nav>
+        <ul class="nav-row">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/register">Регистрация</a></li>
+            <li><a href="/login">Вход</a></li>
+            <li><a href="/logout">Выйти</a></li>
+        </ul>
+        <ul class="nav-row">
+            <li><a href="/xo">Одиночная игра</a></li>
+            <li><a href="/games_list">Список одиночных игр</a></li>
+            <li><a href="/multiplayer">Мультиплеер</a></li>
+        </ul>
+    </nav>
+    <div class="user-info">
+        {% if session.get('user_login') %}
+            <a href="{{ url_for('routes.user_info') }}" style="text-decoration: none; color: inherit;">
+                <p>Привет {{ session['user_login'] }}</p>
+            </a>
+        {% else %}
+            <p>Привет Гость</p>
+        {% endif %}
+    </div>
+</header>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    <p>Разработано для веселья и хорошего настроения!</p>
+</footer>
+</body>
+</html>

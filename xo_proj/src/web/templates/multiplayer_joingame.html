@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Крестики-нолики от johnalen</title>
+    <link rel="stylesheet" href="/static/styles.css">
+{% endblock %}
+{% block content %}
+    <h1>Крестики-нолики</h1>
+    <h2>Мультиплеер</h2>
+    <div id="symbolSelection" style="display: none;">
+        <button onclick="beginMultiGame('{{ game_id }}')">Начать мультигейм</button>
+    </div>
+    <table id="gameBoard"></table>
+    <br>
+
+    <p id="playerDisplay"></p>
+    <p id="statement"></p>
+    <p id="game_id"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/script_multi.js"></script>
+    <script>
+        // Автоматический запуск continueGame при загрузке страницы
+        document.addEventListener("DOMContentLoaded", function () {
+            beginMultiGame("{{ game_id }}");
+        });
+    </script>
+{% endblock %}

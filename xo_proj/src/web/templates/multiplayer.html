@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Крестики-нолики от johnalen</title>
+<link rel="stylesheet" href="/static/styles.css">
+{% endblock %}
+{% block content %}
+<h1>Крестики-нолики</h1>
+<h2>Мультиплеер</h2>
+<div id="symbolSelection" style="display: block;">
+  <br>
+    <a href="/multiplayer_game">Создать новую игру</a>
+      <br><br><br><br>
+    <a href="/multiplayer_continue">Продолжить последнюю игру</a>
+  <br><br><br><br>
+    <a href="/multiplayer_games_list">Присоединиться к игре</a>
+  <br><br>
+</div>
+{% endblock %}
