@@ -1,26 +1,27 @@
 {% extends 'base.html' %}
 {% block head %}
-<title>Крестики-нолики от johnalen</title>
-<link rel="stylesheet" href="/static/styles.css">
+    <title>Крестики-нолики от johnalen</title>
+    <link rel="stylesheet" href="/static/styles.css">
 {% endblock %}
 {% block content %}
-<h1>Крестики-нолики</h1>
-<div id="symbolSelection" style="display: none;">
-    <p>Выберите за что играть:</p>
-    <label>
-        <input type="radio" name="player_symbol" value="X" checked> Крестики (X)
-    </label>
-    <label>
-        <input type="radio" name="player_symbol" value="O"> Нолики (O)
-    </label>
-    <button onclick="startNewGame()">Начать игру</button>
-</div>
-<table id="gameBoard"></table>
-<br>
-<p id="playerSymbolDisplay"></p>
-<a id="newGameLink" href="{{ url_for('routes.game_xo') }}">
-    <button id="newGameButton" style="display: none;">Начать новую игру</button>
-</a>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/static/script.js"></script>
+    <h1>Крестики-нолики</h1>
+    <div id="symbolSelection" style="display: none;">
+        <p>Выберите за что играть:</p>
+        <label>
+            <input type="radio" name="player_symbol" value="X" checked> Крестики (X)
+        </label>
+        <label>
+            <input type="radio" name="player_symbol" value="O"> Нолики (O)
+        </label>
+        <button onclick="startNewGame()">Начать игру</button>
+    </div>
+    <table id="gameBoard"></table>
+    <br>
+    <p id="playerSymbolDisplay"></p>
+    <a id="newGameLink" href="{{ url_for('routes.game_xo') }}">
+        <button id="newGameButton" style="display: none;">Начать новую игру</button>
+    </a>
+    <script src="/static/script.js"></script>
+    <script src="/static/sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="/static/sweetalert2.css">
 {% endblock %}

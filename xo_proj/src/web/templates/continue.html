@@ -14,8 +14,9 @@
     <a href="{{ url_for('routes.game_xo') }}">
         <button id="newGameButton" style="display: none;">Начать новую игру</button>
     </a>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/static/script.js"></script>
+    <script src="/static/sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="/static/sweetalert2.css">
     <script>
         // Автоматический запуск continueGame при загрузке страницы
         document.addEventListener("DOMContentLoaded", function () {

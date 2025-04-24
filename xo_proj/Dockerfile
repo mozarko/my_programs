@@ -4,6 +4,9 @@ FROM python:3.12-slim
 # 2. Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app
 
+# 2.1 Устанавливаем зависимости системы, включая curl
+RUN apt-get update && apt-get install -y curl && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 # 3. Копируем файл зависимостей в контейнер
 COPY requirements.txt .
 
