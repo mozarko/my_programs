@@ -3,6 +3,7 @@ from functools import wraps
 from flask import request, jsonify, make_response, render_template, session, redirect, url_for
 from domain.user_service import UserService
 import base64
+from tasks import register_user_task  # импорт вверху
 
 
 class UserAuthController:
@@ -14,7 +15,11 @@ class UserAuthController:
             return make_response(jsonify({"error": "Invalid request"}), 400)
 
         # Проверяем успешность регистрации
-        registration_success = UserService().register(data['login'], data['password'])
+        # registration_success = UserService().register(data['login'], data['password'])
+        result_registartion = register_user_task.delay(data['login'], data['password'])
+        registration_success = result_registartion.get(timeout=10)
+
+        print("registr success", registration_success)
 
         if not registration_success:
             return render_template("user_register.html", registration_error=True)
