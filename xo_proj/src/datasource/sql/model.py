@@ -1,3 +1,5 @@
+# model.py
+
 from typing import Annotated
 from sqlalchemy import ForeignKey, text
 from sqlalchemy.orm import Mapped, mapped_column, relationship

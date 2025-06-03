@@ -9,7 +9,7 @@ from datasource.sql.sql_service import SQLService
 from prometheus_flask_exporter import PrometheusMetrics
 
 
-SQLService.run()
+#SQLService.run()
 repository = GameRepository()
 Container.register('repository', repository)
 service = MinimaxGameService()

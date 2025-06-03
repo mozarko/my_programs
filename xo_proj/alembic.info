@@ -1,0 +1,17 @@
+1. Остановить и удалить все контейнеры и тома
+
+docker-compose -f docker-compose.dev.yml down -v
+
+-v удаляет тома (pgdata), то есть база будет чистая
+
+2. Пересобрать и запустить контейнеры
+
+docker-compose -f docker-compose.dev.yml up -d --build
+
+Запускает всё заново в фоне (база пустая).
+
+3. Применить миграции Alembic (создать таблицы)
+
+docker-compose -f docker-compose.dev.yml exec flask alembic upgrade head
+
+Эта команда создаст таблицы в пустой базе PostgreSQL через Alembic миграцию.

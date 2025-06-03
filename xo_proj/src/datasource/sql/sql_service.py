@@ -5,5 +5,5 @@ class SQLService:
 
     @staticmethod
     def run():
-        # SyncORM.drop_tables()
-        SyncORM.create_tables()
+        SyncORM.drop_tables()
+        # SyncORM.create_tables()
