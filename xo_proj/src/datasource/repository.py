@@ -12,6 +12,10 @@ class UserRepository:
     def get_user(login: str) -> User | None:
         return DatasourceMapper.get_user_from_sql(login)
 
+    @staticmethod
+    def get_user_by_uid(uid: str) -> User | None:
+        return DatasourceMapper.get_user_from_sql(uid)
+
 
 class GameRepository:
     @staticmethod

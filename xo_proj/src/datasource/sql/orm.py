@@ -139,6 +139,11 @@ class SyncORM:
         with session_factory() as sess:
             user = sess.query(UsersOrm).filter_by(login=login).first()
             return user
+    @staticmethod
+    def get_user_by_uid(uid) -> UsersOrm | None:
+        with session_factory() as sess:
+            user = sess.query(UsersOrm).filter_by(uid=uid).first()
+            return user
 
     @staticmethod
     def get_all_games_single(user_id):

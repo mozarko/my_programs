@@ -1,4 +1,4 @@
-#user_service.py
+# user_service.py
 from uuid import uuid4
 from domain.model import User
 from datasource.repository import UserRepository
@@ -26,3 +26,9 @@ class UserService:
             return user
         print("UserService User authenticated incorrect:", user)
         return None
+
+    @staticmethod
+    def get_by_uid(user_uuid: str) -> User | None:
+        user = UserRepository.get_user_by_uid(user_uuid)
+        print("UserService get_by_uid:", user)
+        return user

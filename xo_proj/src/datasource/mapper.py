@@ -8,8 +8,17 @@ class DatasourceMapper:
         SyncORM.add_user(uid=uid, login=login, password=password)
 
     @staticmethod
-    def get_user_from_sql(login: str) -> User | None:
-        user_from_sql = SyncORM.get_user(login)
+    def get_user_from_sql(login: str = None, uid: str = None) -> User | None:
+        if login:
+            user_from_sql = SyncORM.get_user(login)
+        elif uid:
+            user_from_sql = SyncORM.get_user_by_uid(uid)
+        else:
+            raise Exception("No login or uid provided")
+
+        if not user_from_sql:
+            raise Exception("User not found")
+
         return User(user_id=user_from_sql.id, uid=user_from_sql.uid, login=user_from_sql.login,
                     password=user_from_sql.password) if user_from_sql else None
 
