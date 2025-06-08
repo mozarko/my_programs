@@ -1,50 +1,46 @@
-// Скрипт для отправки данных с использованием Basic Auth
+// Скрипт для входа через JWT
 function handleLogin(event) {
-    event.preventDefault(); // Отменяем стандартную отправку формы
+    event.preventDefault();
+
     const login = document.querySelector('input[name="login"]').value;
     const password = document.querySelector('input[name="password"]').value;
-    // Создаем строку "login:password"
-    const credentials = btoa(login + ':' + password);
-    // Создаем заголовок Authorization
-    const headers = {
-        'Authorization': 'Basic ' + credentials
-    };
-    // Выполняем запрос с заголовками
-    fetch('/login', {
+
+    fetch('/auth/login', {
         method: 'POST',
-        headers: headers
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ login, password })
     })
-    .then(response => response.json())
-    .then(data => {
-        if (data.error) {
-            showPopup('Неверный логин или пароль'); // Показываем ошибку если есть
-        } else {
+    .then(response => response.json().then(data => ({ status: response.status, data })))
+    .then(({ status, data }) => {
+        if (status === 200 && data.accessToken && data.refreshToken) {
+            // Сохраняем токены
+            localStorage.setItem('accessToken', data.accessToken);
+            localStorage.setItem('refreshToken', data.refreshToken);
             showPopup('Вход выполнен успешно!', true);
+        } else {
+            showPopup(data.error || 'Неверный логин или пароль');
         }
     })
     .catch(error => {
         console.error('Ошибка:', error);
         showPopup(error.message);
-        });
-    }
+    });
+}
 
-    // Показ всплывающего окна
-    function showPopup(message, success = false) {
-        document.getElementById("popup-message").innerText = message;
-        document.getElementById("popup").style.display = "block";
-        document.getElementById("overlay").style.display = "block";
-        // Запоминаем, нужно ли сделать редирект после закрытия
-        document.getElementById("popup").setAttribute("data-success", success);
-    }
+// Показ всплывающего окна
+function showPopup(message, success = false) {
+    document.getElementById("popup-message").innerText = message;
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("popup").setAttribute("data-success", success);
+}
 
-    // Закрытие всплывающего окна и переход на главную страницу
-    function closePopup() {
-        const popup = document.getElementById("popup");
-        const overlay = document.getElementById("overlay");
-        popup.style.display = "none";
-        overlay.style.display = "none";
-        // Если вход успешен, перенаправляем на главную страницу
-        if (popup.getAttribute("data-success") === "true") {
-            window.location.href = "/";
+// Закрытие всплывающего окна и переход на главную страницу
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+    if (popup.getAttribute("data-success") === "true") {
+        window.location.href = "/";
     }
 }

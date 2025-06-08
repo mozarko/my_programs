@@ -16,9 +16,6 @@ class DatasourceMapper:
         else:
             raise Exception("No login or uid provided")
 
-        if not user_from_sql:
-            raise Exception("User not found")
-
         return User(user_id=user_from_sql.id, uid=user_from_sql.uid, login=user_from_sql.login,
                     password=user_from_sql.password) if user_from_sql else None
 

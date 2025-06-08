@@ -23,15 +23,19 @@
             <li><a href="/multiplayer">Мультиплеер</a></li>
         </ul>
     </nav>
-    <div class="user-info">
-        {% if session.get('user_login') %}
-            <a href="{{ url_for('routes.user_info') }}" style="text-decoration: none; color: inherit;">
-                <p>Привет {{ session['user_login'] }}</p>
-            </a>
-        {% else %}
-            <p>Привет Гость</p>
-        {% endif %}
-    </div>
+<!--    <div class="user-info">-->
+<!--        {% if session.get('user_login') %}-->
+<!--            <a href="{{ url_for('routes.user_info') }}" style="text-decoration: none; color: inherit;">-->
+<!--                <p>Привет {{ session['user_login'] }}</p>-->
+<!--            </a>-->
+<!--        {% else %}-->
+<!--            <p>Привет Гость</p>-->
+<!--        {% endif %}-->
+<!--    </div>-->
+
+<div class="user-info" id="user-info-block">
+    <!-- Сюда JS подставит имя пользователя или "Гость" -->
+</div>
 </header>
 
 <div class="content">
@@ -42,4 +46,30 @@
     <p>Разработано для веселья и хорошего настроения!</p>
 </footer>
 </body>
+<script>
+async function updateUserInfo() {
+    const userInfoBlock = document.getElementById('user-info-block');
+    const accessToken = localStorage.getItem('accessToken');
+    if (accessToken) {
+        // Пробуем получить инфу о пользователе через API
+        try {
+            let resp = await fetch('/auth/userinfo', {
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                }
+            });
+            if (resp.ok) {
+                let data = await resp.json();
+                userInfoBlock.innerHTML = `<a href="/auth/userinfo" style="text-decoration: none; color: inherit;">
+                    <p>Привет, ${data.login}</p>
+                </a>`;
+                return;
+            }
+        } catch (e) {}
+    }
+    // Если не залогинен или ошибка — показываем "Гость"
+    userInfoBlock.innerHTML = `<p>Привет, Гость</p>`;
+}
+document.addEventListener('DOMContentLoaded', updateUserInfo);
+</script>
 </html>

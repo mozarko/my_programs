@@ -19,3 +19,23 @@ function closePopup(redirectUrl) {
         window.location.href = redirectUrl;
     }
 }
+
+// Обработка отправки формы регистрации через fetch
+document.getElementById("registerForm").onsubmit = async function(e) {
+    e.preventDefault();
+    let login = this.login.value;
+    let password = this.password.value;
+    let response = await fetch('/auth/register', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({login, password})
+    });
+    let data = await response.json();
+    if (response.status === 201) {
+        showPopup('Регистрация успешна!', '/login');
+    } else if (response.status === 409) {
+        showPopup('Ошибка регистрации: пользователь уже существует!', null);
+    } else {
+        showPopup(data.error || 'Ошибка регистрации', null);
+    }
+};
